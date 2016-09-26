@@ -13,7 +13,28 @@ A simple config server - spread your configs like fire!
 ![](https://raw.githubusercontent.com/ethanjcohen/Fire/master/images/node-start.png "Overview")
 
 ### Node Module
-Details coming soon...
+Use Fire as a module in your custom script to fully integrate it with other systems and automation tools.
+```
+npm install https://github.com/ethanjcohen/Fire.bit
+```
+```javascript
+var fire = require('fire-config'),
+    server = fire.server,
+    configs = fire.configs;
+
+configs.events.on('refreshed', function() {
+    //notify your system that new configs are available
+})
+
+server.start(function(err) {
+    if(!err) {
+        //The REST API server is now running
+
+        //Refresh the configs from our repo
+        configs.refresh()
+    }
+})
+```
 
 ## What?
 Fire is a config server. Initialize your code by fetching configs from it using a simple REST API.
