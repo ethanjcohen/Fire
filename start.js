@@ -1,5 +1,6 @@
-const server = require('./lib/server'),
-    configs = require('./lib/configs'),
+const fire = require('./index'),
+    server = fire.server,
+    configs = fire.configs,
     c = require('config'),
     source = configs.getSource(),
     tag = 'Fire: ';
