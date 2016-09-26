@@ -1,5 +1,5 @@
 {
-  "name": "config-server",
+  "name": "fire-config",
   "version": "0.0.1",
   "description": "Simple config server.",
   "main": "index.js",
