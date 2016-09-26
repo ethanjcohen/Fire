@@ -1,0 +1,11 @@
+{
+    server: {
+        port: 3000,
+        manualRefresh: true
+    },
+    configs: {
+        configsDir: 'config',
+        useInstanceDirs: false
+    },
+    refreshOnStart: true
+}

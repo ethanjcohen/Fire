@@ -1,0 +1,13 @@
+{
+  "name": "config-server",
+  "version": "0.0.1",
+  "description": "Simple config server.",
+  "main": "index.js",
+  "dependencies": {
+      "body-parser": "1.15.2",
+      "config": "1.21.0",
+      "del": "2.2.2",
+      "express": "4.14.0",
+      "git-clone": "0.1.0"
+  }
+}

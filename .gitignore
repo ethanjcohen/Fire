@@ -1,0 +1,8 @@
+logs/*
+play.js
+config/**/local.*
+config/**/local-*
+npm-debug.log
+node_modules/*
+tls/*
+repocode/*
