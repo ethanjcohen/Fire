@@ -1,7 +1,7 @@
 const fire = require('./index'),
     server = fire.server,
     configs = fire.configs,
-    c = require('config'),
+    c = require('config').get('fireConfig'),
     source = configs.getSource(),
     tag = 'Fire: ';
 
