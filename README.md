@@ -73,7 +73,7 @@ GET /config/todoapp/qa
 ## Options
 To modify options: Create a local.json5 file and override any values seen below.
 
-| Module | Name | Default Value | Description |
+| Module | Name | Default | Description |
 | --- | --- | --- | --- |
 | fireConfig | refreshOnStart | true | True to refresh configs on startup
 | fireConfig.server | port | 80 | The port that the REST API listens to
