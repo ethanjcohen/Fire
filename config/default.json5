@@ -1,12 +1,21 @@
 {
     fireConfig: {
         server: {
+            path: '/fire',
             port: 3000,
-            manualRefresh: true
+            manualRefresh: true,
+            webhooks: {
+                bitbucket: null,
+                github: null
+            }
         },
         configs: {
             configsDir: 'config',
-            useInstanceDirs: false
+            useInstanceDirs: false,
+            git: null,
+            decryption: {
+                aesKey: null
+            }
         },
         refreshOnStart: true
     }
