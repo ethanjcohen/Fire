@@ -73,18 +73,18 @@ GET /config/todoapp/qa
 ## Options
 To modify options: Create a local.json5 file and override any values seen below.
 
-| Name | Default Value | Description |
-| --- | --- | --- |
-| server.port | 80 | The port that the REST API listens to
-| server.refreshOnStart | true | True to refresh configs on startup
-| server.manualRefresh | true | True to enable the GET /refresh path
-| server.webhooks.bitbucket | null | Set this value as an object to enable GET /webhooks/bitbucket 
-| server.webhooks.bitbucket.mergeInto | null | The branch name that the pull request must be merged into to trigger a refresh
-| server.webhooks.github | null | Set this value as an object to enable GET /webhooks/github 
-| server.webhooks.github.mergeInto | null | The branch name that the pull request must be merged into to trigger a refresh
-| configs.configsDir | 'config' | The directory inside the repo that contains the config files
-| configs.useInstanceDirs | false | True if your config files are separated into directories for each instance name (i.e. /config/todoapi, /config/todowebsite)
-| git.repo | null | The value passed to "git clone --repo {value}"
-| git.username | null | (optional) Will be inserted into the git.repo value
-| git.password | null | (optional) Will be inserted into the git.repo value
-| git.checkout | null | The branch name, commit, etc to checkout. This is the value passed to "git checkout {value}"
+| Module | Name | Default | Description |
+| --- | --- | --- | --- |
+| fireConfig | refreshOnStart | true | True to refresh configs on startup
+| fireConfig.server | port | 80 | The port that the REST API listens to
+|  | manualRefresh | true | True to enable the GET /refresh path
+|  | webhooks.bitbucket | null | Set this value as an object to enable GET /webhooks/bitbucket 
+|  | webhooks.bitbucket.mergeInto | null | The branch name that the pull request must be merged into to trigger a refresh
+|  | webhooks.github | null | Set this value as an object to enable GET /webhooks/github 
+|  | webhooks.github.mergeInto | null | The branch name that the pull request must be merged into to trigger a refresh
+| fireConfig.configs | configsDir | 'config' | The directory inside the repo that contains the config files
+|  | useInstanceDirs | false | True if your config files are separated into directories for each instance name (i.e. /config/todoapi, /config/todowebsite)
+|  | git.repo | null | The value passed to "git clone --repo {value}"
+|  | git.username | null | (optional) Will be inserted into the git.repo value
+|  | git.password | null | (optional) Will be inserted into the git.repo value
+|  | git.checkout | null | The branch name, commit, etc to checkout. This is the value passed to "git checkout {value}"
